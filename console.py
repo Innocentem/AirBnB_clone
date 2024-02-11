@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-AirBNB clone console
+AirBNB clone console.
 """
 import cmd
 
