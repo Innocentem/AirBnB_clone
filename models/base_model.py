@@ -2,6 +2,7 @@
 """
 BaseModel module
 """
+
 from datetime import datetime
 import uuid
 
