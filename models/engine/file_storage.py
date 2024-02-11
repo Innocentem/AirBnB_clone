@@ -12,11 +12,11 @@ class FileStorage:
     __file_path: str = 'file.json'
 
     def all(self):
-        """Returns the dictionary objects"""
+        """Returns the dictionary __objects"""
         return type(self).__objects
 
     def save(self):
-        """Serialization of objects to JSON file (path: __file_path)"""
+        """Serializes __objects to the JSON file (path: __file_path)"""
         new_obj = type(self).__objects
         path = type(self).__file_path
         with open(path, 'w', encoding='UTF-8') as file:
@@ -27,13 +27,13 @@ class FileStorage:
             )
 
     def new(self, obj):
-        """Puts in __objects the obj with key <obj class name>.id"""
+        """Sets in __objects the obj with key <obj class name>.id"""
         type(self).__objects[f"{obj.__class__.__name__}"] = obj
 
     def reload(self):
         """
-        Deserialisation of the JSON file to __objects
-        (only if the JSON file exists; otherwise, do nothing.
+        Deserializes the JSON file to __objects
+        (only if the JSON file (__file_path) exists ; otherwise, do nothing.
         If the file doesn’t exist, no exception should be raised)
         """
         path = type(self).__file_path
