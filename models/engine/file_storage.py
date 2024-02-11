@@ -28,7 +28,7 @@ class FileStorage:
 
     def new(self, obj):
         """Sets in __objects the obj with key <obj class name>.id"""
-        type(self).__objects[f"{obj.__class__.__name__}"] = obj
+        type(self).__objects[f"{obj.__class__.__name__}.{obj.id}"] = obj
 
     def reload(self):
         """
