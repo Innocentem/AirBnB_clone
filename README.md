@@ -61,3 +61,4 @@ Here are a few examples of how to use the command interpreter:
 Feel free to explore and experiment with the available commands to get familiar with the functionality of the AirBnB clone.
 
 With this command interpreter, you can manage properties, users, and bookings, mimicking some core features of the actual AirBnB website. Enjoy exploring and developing your own version of the AirBnB clone!
+
