@@ -5,18 +5,21 @@ AirBNB clone console
 import cmd
 
 
-class AirbnbShell(cmd.Cmd):
+class HBNBCommand(cmd.Cmd):
     """Implementation of an AirBNB CLI"""
     prompt = "(hbnb) "
 
     def do_EOF(self, line):
-        """Command Exit console on EOF signal (^D)"""
+        """Command to exit the console on EOF signal (^D)"""
         return True
 
     def do_quit(self, line):
-        """Exit console on normal quit"""
+        """Quit command to exit the console"""
         return True
+
+    def emptyline(self) -> bool:
+        pass
 
 
 if __name__ == '__main__':
-    AirbnbShell().cmdloop()
+    HBNBCommand().cmdloop()

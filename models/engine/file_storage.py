@@ -9,7 +9,7 @@ import json
 class FileStorage:
     """Serialization of instance to JSON and Deserialize JSON to instance"""
     __objects: dict = dict()
-    __file_path: str = 'file.json'
+    __file_path: str = "file.json"
 
     def all(self):
         """Returns the dictionary __objects"""
