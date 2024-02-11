@@ -25,9 +25,9 @@ class BaseModel:
 
     def to_dict(self):
         """Returns a dictionary representation of the class"""
-        cur_dict = self.__dict__
-        cur_dict["__class__"] = type(self).__name__
-        return cur_dict
+        new_dict = self.__dict__
+        new_dict["__class__"] = type(self).__name__
+        return new_dict
 
     def save(self):
         """Save the changes that have been made"""
