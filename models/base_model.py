@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Base Model of the AirBnB project
+BaseModel module
 """
 from datetime import datetime
 import uuid
