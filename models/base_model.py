@@ -11,8 +11,8 @@ class BaseModel:
 
     def __init__(self):
         """New Instance of the Base Model"""
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        self.created_at = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
+        self.updated_at = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
         self.id = str(uuid.uuid4())
 
     def __str__(self):
@@ -31,4 +31,4 @@ class BaseModel:
 
     def save(self):
         """Save the changes that have been made"""
-        self.updated_at = datetime.now()
+        self.updated_at = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
