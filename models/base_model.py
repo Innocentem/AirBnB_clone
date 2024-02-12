@@ -33,4 +33,3 @@ class BaseModel:
     def save(self):
         """Save the changes that have been made"""
         self.updated_at = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
-
